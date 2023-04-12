@@ -1,10 +1,17 @@
-import "./App.css"
+/***** IMPORT ***********************************************************************************/
+import { ChakraProvider } from "@chakra-ui/react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar"
 
+/***** APP ***************************************************************************************/
 function App() {
   return (
-    <div className="App">
-      <h1>ECOM COMING SOON ....</h1>
-    </div>
+    <ChakraProvider>
+      <Router>
+        <Navbar />
+        <main>{/* */}</main>
+      </Router>
+    </ChakraProvider>
   )
 }
 
